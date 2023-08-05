@@ -46,7 +46,10 @@ from .utils import (
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
 import torch
-dummy_tensor = torch.randint(low=0, high=100, size=(512, 1024, 1024))
+
+dummy_tensor = torch.randint(low=0, high=100, size=(1024, 1024, 1024))
+
+# raise ValueError("....")
 
 
 # Base objects, independent of any specific backend
