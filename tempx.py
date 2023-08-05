@@ -24,4 +24,4 @@ if __name__ == "__main__":
 
     # tests_to_run = " ".join(tests_to_run)
 
-    pytest.main(["-n", "3", "--max-worker-restart", "0", "--dist", "loadfile", "-s", "--make-reports", "tests_torch"] + tests_to_run)
+    pytest.main(["-n", "3", "--forked", "--max-worker-restart", "0", "--dist", "loadfile", "-s", "--make-reports", "tests_torch"] + tests_to_run)
