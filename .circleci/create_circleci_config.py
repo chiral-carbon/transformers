@@ -227,7 +227,7 @@ class CircleCIJob:
         else:
             test_command += " | tee tests_output.txt"
 
-        # test_command = "python3 tempx.py"
+        test_command = "python3 tempx.py"
 
         steps.append({"run": {"name": "Run tests", "command": test_command}})
 
