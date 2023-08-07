@@ -398,7 +398,6 @@ class OPTPreTrainedModel(PreTrainedModel):
     config_class = OPTConfig
     base_model_prefix = "model"
     supports_gradient_checkpointing = True
-    _no_split_modules = ["OPTDecoder"]
 
     def _init_weights(self, module):
         std = self.config.init_std

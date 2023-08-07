@@ -490,7 +490,6 @@ class XGLMPreTrainedModel(PreTrainedModel):
     config_class = XGLMConfig
     base_model_prefix = "model"
     supports_gradient_checkpointing = True
-    _no_split_modules = ["XGLMModel"]
 
     def _init_weights(self, module):
         std = self.config.init_std
