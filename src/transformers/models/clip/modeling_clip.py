@@ -1198,7 +1198,7 @@ class CLIPModel(CLIPPreTrainedModel):
 class CLIPTextModelWithProjection(CLIPPreTrainedModel):
     config_class = CLIPTextConfig
 
-    _no_split_modules = ["CLIPEncoderLayer"]
+    _no_split_modules = ["CLIPTextEmbeddings", "CLIPEncoderLayer"]
 
     def __init__(self, config: CLIPTextConfig):
         super().__init__(config)
