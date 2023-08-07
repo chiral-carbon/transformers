@@ -579,7 +579,6 @@ class LiltPooler(nn.Module):
         return pooled_output
 
 
-# Copied from transformers.models.roberta.modeling_roberta.RobertaPreTrainedModel with Roberta->Lilt,roberta->lilt
 class LiltPreTrainedModel(PreTrainedModel):
     """
     An abstract class to handle weights initialization and a simple interface for downloading and loading pretrained
@@ -589,7 +588,6 @@ class LiltPreTrainedModel(PreTrainedModel):
     config_class = LiltConfig
     base_model_prefix = "lilt"
     supports_gradient_checkpointing = True
-    _no_split_modules = ["LiltEmbeddings", "LiltSelfAttention"]
 
     # Copied from transformers.models.bert.modeling_bert.BertPreTrainedModel._init_weights
     def _init_weights(self, module):

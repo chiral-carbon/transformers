@@ -243,7 +243,6 @@ class LiltModelTest(ModelTesterMixin, GenerationTesterMixin, PipelineTesterMixin
     )
     fx_compatible = False
     test_pruning = False
-    model_split_percents = [0.5, 0.8, 0.9]
 
     # TODO: Fix the failed tests
     def is_pipeline_test_to_skip(
