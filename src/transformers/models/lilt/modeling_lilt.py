@@ -589,7 +589,7 @@ class LiltPreTrainedModel(PreTrainedModel):
     config_class = LiltConfig
     base_model_prefix = "lilt"
     supports_gradient_checkpointing = True
-    _no_split_modules = []
+    _no_split_modules = ["LiltEmbeddings", "LiltSelfAttention"]
 
     # Copied from transformers.models.bert.modeling_bert.BertPreTrainedModel._init_weights
     def _init_weights(self, module):
